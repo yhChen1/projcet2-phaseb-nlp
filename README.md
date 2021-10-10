@@ -11,3 +11,12 @@ The result is
 Last I used some part of lecture of 'We choose to go to the moos"
 the result is 
 ![image](https://user-images.githubusercontent.com/90472030/135170714-18e9635f-2e5c-4cd9-8777-c6be3ef70358.png)
+
+
+The complete code is in project2.py
+In this case, I want to analyze people's sentiment on a specific tpoic. I use api.search() to search twitters conrain certain keyword.
+This time, I use keyword "dota2" and set the language as english.
+![image](https://user-images.githubusercontent.com/90472030/136713051-39ec4800-16ef-46ac-9b79-b2332ddf4547.png)
+These are part of the result of searching and analyzing
+![image](https://user-images.githubusercontent.com/90472030/136713072-236e3480-e921-40e9-901a-7b47f77d6ecb.png)
+At last , the average of secore is calculated so that people will have a clear view on people's sentiment on this topic.
