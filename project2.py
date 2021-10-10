@@ -98,10 +98,10 @@ def sample_analyze_sentiment_zh(text_content):
 
 
 
-consumer_key = "llEDRrYlF3aOb9V9jMR1lWzZf"
-consumer_secret = "8XUbnox3Cox5lEAXOcAnAmlxP43ZUa2juZeRh46Jz8OLrdS4pi"
-access_key = "1442202224973676548-d3Kq7BSdveVcRTx37jmI6Xtszm2iQn"
-access_secret = "nxLjK9C86kqUgE2Tsx2ytSkW5AKWMOKksmCFlwmO9Pwgn"
+consumer_key = 
+consumer_secret = 
+access_key = 
+access_secret = 
 
 
 
