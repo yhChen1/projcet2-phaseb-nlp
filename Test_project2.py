@@ -1,5 +1,4 @@
-
-from google.cloud.language_v1.types.language_service import AnalyzeEntitiesRequest
+from google.cloud import language_v1
 import project2
 import pytest
 import tweepy
