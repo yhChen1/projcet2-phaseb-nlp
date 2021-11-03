@@ -133,6 +133,7 @@ def get_keywords_from_param():
     args = sys.argv
     return args[1:]
 def main():
+    start = time.time()
     keywords = get_keywords_from_param()
     keywords = get_keywords_from_param()
     if keywords != []:
@@ -180,6 +181,8 @@ def main():
         ave = t / le
 
     print("the avergae of score is", ave)
+    end = time.time()
+    return end-start
 
 if __name__=='__main__':
     main()
