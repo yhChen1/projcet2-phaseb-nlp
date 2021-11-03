@@ -1,0 +1,32 @@
+name: pytest-analyzer
+
+# Controls when the workflow will run
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  Integration:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.7]
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+
+        with:
+          python-version: ${{matrix.python-version}}
+      - run: pip install pytest
+      - run: pip install tweepy
+      - run: pip install google
+      - run: pip install google-api-core
+      - run: pip install google-cloud-language
+      - run: pytest Test_project2.py
