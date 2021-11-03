@@ -22,7 +22,7 @@ def test_get_keyword_input(monkeypatch):
 
 def test_get_keyword_param():
     get_keywords = project2.get_keywords_from_param()
-    assert get_keywords == ['Test_Media_Analyse.py']
+    assert get_keywords == ['Test_project2.py']
 
 def test_sample_analyze_sentiment():
     keywords = 'dota2'
