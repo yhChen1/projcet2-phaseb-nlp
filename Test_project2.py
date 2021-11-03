@@ -24,11 +24,4 @@ def test_get_keyword_param():
     get_keywords = project2.get_keywords_from_param()
     assert get_keywords == ['Test_project2.py']
 
-def test_sample_analyze_sentiment():
-    keywords = 'dota2'
-    rs = project2.sample_analyze_sentiment(keywords)
-    assert rs == 0.8999999761581421
 
-def test_process_time():
-    time_process = project2.main()
-    assert time_process <= 1
