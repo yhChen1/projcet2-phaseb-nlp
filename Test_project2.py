@@ -27,7 +27,7 @@ def test_get_keyword_param():
 def test_sample_analyze_sentiment():
     keywords = 'dota2'
     rs = project2.sample_analyze_sentiment(keywords)
-    assert (rs > -5 and rs < 5)
+    assert rs == 0.8999999761581421
 
 def test_process_time():
     time_process = project2.main()
