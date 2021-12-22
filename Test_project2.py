@@ -28,6 +28,11 @@ def test_sample_analyze_sentiment():
     keywords = 'dota2'
     rs = project2.sample_analyze_sentiment(keywords)
     assert (rs > -5 and rs < 5)
+    
+def test_sample_analyze_sentiment1():
+    keywords = 'genshinimpact'
+    rs = project2.sample_analyze_sentiment(keywords)
+    assert (rs > -5 and rs < 5)
 
 def test_process_time():
     time_process = project2.main()
