@@ -163,7 +163,7 @@ def main():
                 flag = input('You want to search {}. y/n: '.format(' and '.join(keywords)))
                 while (flag != 'y' and flag != 'n'):
                     flag = input('Please choose exactly y/n: ')
-
+    end = time.time()
     for keyword in keywords:
         searchr = api.search_tweets(q = keywords, lang='en',count = 5)
         pt = api.home_timeline()
@@ -181,7 +181,7 @@ def main():
         ave = t / le
 
     print("the avergae of score is", ave)
-    end = time.time()
+    
     return end-start
 
 if __name__=='__main__':
